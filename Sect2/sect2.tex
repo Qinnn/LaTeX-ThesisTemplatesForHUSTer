@@ -1,0 +1,41 @@
+\section{公式}
+这里介绍公式
+\subsection{行内公式}
+这里有一个行内公式：$E=mc^2$，行内公式处于两个``\$"之间。
+
+这里是上标和下标的写法：
+\begin{itemize}
+  \item 上标：$a^2$，$a^{x+y}$，$a^{b^{c^d}}$，$^aX^a$。
+
+  当上标或下标字符超过一时要用大括号括起来
+  \item 下标：$a_2$， $a_{x+y}$，$a_{b_{c_d}}$
+\end{itemize} 
+
+\subsection{行间公式}
+一般行间公式的写法：
+\begin{equation}
+  a+b=c
+  \label{abc}
+\end{equation}
+
+这样一个公式写出来就会自动编号，\text{\label{abc}}给这个公式起了个名字，在其他的地方就可以应用它，比如： 式\ref{abc}中讲到$c$是$a$和$b$的和。
+\subsubsection{矩阵}
+\begin{equation}
+A=
+ \left[
+  \begin{array}{ccc}% c表示元素居中，也可以用l,r分别表示左右对其
+    1 & 2 & 3\\
+    3 & 4 & 5\\
+    5 & 6 & 7\\
+  \end{array}
+  \right]
+\end{equation}
+
+\subsubsection{公式换行对齐}
+\begin{equation}
+  \begin{aligned}
+  f&=a+b+c+d\\% &设置对齐点
+   &=e+f+h+j\\
+   &=+z+x+c+v\\
+  \end{aligned}
+\end{equation}
