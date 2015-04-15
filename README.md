@@ -19,6 +19,8 @@ LaTeX的强悍之处不多言。此模板非常粗糙，没有封装，基于cte
 * \Sect2\sect.tex (第二节)
 *  ... (按需求添加即可)
 
+请把main.tex设置为主文件，使用XeLaTeX编译即可。
+
 使用XeLaTeX编译
 
 3 参考文献
