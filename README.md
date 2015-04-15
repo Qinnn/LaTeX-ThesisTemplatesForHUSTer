@@ -1,5 +1,5 @@
 # LaTeX-ThesisTemplatesForHUSTer
-A vvvvvery rough LaTeX Thesis Templates For HUSTer.
+A vvvvvery rough LaTeX Thesis Template For HUSTer.
 
 0
 ---
