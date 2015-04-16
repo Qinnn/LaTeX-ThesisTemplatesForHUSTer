@@ -17,8 +17,8 @@ fork 或者直接 下载整个文件
 
 * \Abstract_Chn.tex (中文摘要)
 * \Abstract_Eng.tex（英文摘要）
-* \Sect1\sect.tex (第一节)
-* \Sect2\sect.tex (第二节)
+* \Sect1\sect1.tex (第一节)
+* \Sect2\sect2.tex (第二节)
 *  ... (按需求添加即可)
 
 请把main.tex设置为主文件，使用XeLaTeX编译即可。
