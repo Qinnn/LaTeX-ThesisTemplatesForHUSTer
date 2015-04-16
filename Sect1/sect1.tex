@@ -1,28 +1,48 @@
-\section{绪论}
+\section{结构}
+这里介绍结构。
 
-这里是绪论这里是绪论这里\cite{02-na-va-raman-sphere}这里标注了一个参考文献是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论
-这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论\cite{00-prl-va-critical-coup}这里标注了一个参考文献
-这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论
-这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论
-这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论这里是绪论
-
-\subsection{背景介绍}
-这里是一个小节
+不使用特殊的环境\LaTeX 会忽略掉多余的空格，分段请换行。
+ 
+在article文类中一般就用section，subsection，subsubsection。如果需要更深的层次可以使用enumerate 或者itemize环境{由begin开始，由end结束}。
 
 
-这里是一个小节这里是一个小节这里是一个小节这里是一个小节这里是一个小节这里是一个小节\cite{04-kippenger-thesis}这里标注了一个参考文献
-这里是一个小节这里是一个小节这里是一个小节这里是一个小节这里是一个小节这里是一个小节
 
-\subsection{章节内容}
+\subsection{enumerate环境}
 
-这里是第二个小节这里是第二个小节这里是第二个小节这里是第二个小节这里是第二个小节
-这里是第二个小节这里是第二个小节这里是第二个小节这里是第二个小节这里是第二个小节\cite{04-prl-va-kerr-opo-raman}这里标注了一个参考文献
-这里是第二个小节这里是第二个小节这里是第二个小节这里是第二个小节这里是第二个小节
+enumerate环境可以显示数字或者字母编号，每一条使用item开头，而且其中可以嵌套，例如：
+\begin{enumerate}
+  \item 猫
+  \item 狗
+  \item 羊
+  \begin{enumerate}
+    \item 公羊
+    \item 母羊
+  \end{enumerate}
+  \item 猪
+\end{enumerate}
 
-\subsubsection{狗屎}
+\subsection{itemize环境}
 
-第二个小节的第一个小点
+itemize环境只用黑点或其它符号表示不同的类，不标顺序，其它和enumerate相同，例如：
 
-\subsubsection{牛屎}
+\begin{itemize}
+  \item 猫
+  \item 狗
+  \item 羊
+  \begin{itemize}
+    \item 公羊
+    \item 母羊
+  \end{itemize}
+  \item 猪
+\end{itemize}
 
-第二个小节的第二个小点 
+\subsubsection{aaaa}
+
+aaaa
+
+\subsubsection{bbbb}
+
+bbbb
+
+\subsection{引用与参考文献}
+在填写好Ref.bib之后文中可以用cite来引用。例如这里有一个引用\cite{00-el-yariv-relation-coup}，这时参考文献会自动添加在文章末尾。

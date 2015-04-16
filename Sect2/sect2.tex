@@ -1,7 +1,11 @@
 \section{公式}
-这里介绍公式
+本节介绍公式。
+一般需要添加宏包：amssymb，amsthm， amsmath。
+
 \subsection{行内公式}
 这里有一个行内公式：$E=mc^2$，行内公式处于两个``\$"之间。
+
+$\alpha\beta\Theta\Xi\zeta\Re\Im\wp\infty\partial$等等诸如此类的符号，如果你不太清楚写法可以打开View-->TeX GUI Symbols...然后用鼠标戳进来，分数写法：$\frac{a}{b}$。
 
 这里是上标和下标的写法：
 \begin{itemize}
@@ -9,7 +13,7 @@
 
   当上标或下标字符超过一时要用大括号括起来
   \item 下标：$a_2$， $a_{x+y}$，$a_{b_{c_d}}$
-\end{itemize} 
+\end{itemize}
 
 \subsection{行间公式}
 一般行间公式的写法：
@@ -38,4 +42,9 @@ A=
    &=e+f+h+j\\
    &=+z+x+c+v\\
   \end{aligned}
-\end{equation}
+\end{equation} 
+
+如果有的时候你不希望显示某个公式的编号只需要在equation后面加一个``*''：
+\begin{equation*}
+  \int_a^bf(x)\mathrm{d}x=F(x)
+\end{equation*}

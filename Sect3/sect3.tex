@@ -1,0 +1,55 @@
+\section{插图}
+本节介绍插图。
+
+一般用到的宏包有：graphicx，subfigure等。
+
+请将需要插入的图片放置到相应章节的文件夹中。
+
+最常用的插图如下：
+
+\begin{figure}[htbp]
+ \centering
+        \includegraphics[width=0.5\columnwidth]{hello.png}
+        \caption{
+                \label{hello}
+                这里是hello
+        }
+\end{figure}
+
+centering控制图形居中，htbp 表示图形首选放在当前插图的位置，然后是页面头部，然后是页面尾部。width控制插图宽度（默认图形约束长宽比），后面接要插入的图片名，caption给出图形下面的描述，label为图形建立索引，在别的地方可以用ref来引用。例如：图\ref{hello}里面是hello。 
+
+\subsection{并排插多图}
+
+一般使用minipage来达到这个目的具体请看本页tex源码：
+
+\begin{figure}[htbp]
+\begin{minipage}{0.5\linewidth}
+\centering
+\includegraphics[width=0.3\textwidth]{hello.png}
+\caption{caption1}
+\label{hello1}
+\end{minipage}%
+\begin{minipage}{0.5\linewidth}
+\centering
+\includegraphics[width=0.3\textwidth]{hello.png}
+\caption{caption}
+\label{hello2}
+\end{minipage}
+\end{figure}
+
+\subsection{一幅图多个子图}
+
+一般使用subfigure来达到这个目的具体请看本页tex源码：
+
+\begin{figure}[htb]
+  \centering
+  \subfigure[子图单独的描述]{
+    \label{hello3} %% label for first subfigure
+    \includegraphics[width=0.3\textwidth]{hello.png}}
+  %\vspace{1in}
+  \subfigure[留白可取消]{
+    \label{hello4} %% label for second subfigure
+    \includegraphics[width=0.3\textwidth]{hello.png}}
+    \caption{总的caption}
+  \label{hello5} %% label for entire figure
+\end{figure}
