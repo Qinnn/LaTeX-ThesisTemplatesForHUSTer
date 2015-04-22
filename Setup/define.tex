@@ -1,4 +1,4 @@
-\geometry{top=30mm,bottom=30mm}%调整正文尺寸
+\geometry{top=30mm,bottom=30mm}%调整正文上下边距
 \chead{华中科技大学毕业设计（论文）}
 \lhead{}%页眉左边
 \rhead{}%页眉右边
@@ -9,15 +9,31 @@
 \CTEXsetup[format+={\zihao{-2}}]{section}
 \CTEXsetup[format+={\raggedright}{\zihao{4}}]{subsection}
 \CTEXsetup[format+={\raggedright}{\zihao{-4}}]{subsubsection}
+\pagestyle{fancy}
+%-------调整表格线条粗细-------
+%\newcolumntype{L}[1]{>{\vspace{0.5em}\begin{minipage}{#1}\raggedright\let\newline\\
+%\arraybackslash\hspace{0pt}}m{#1}<{\end{minipage}\vspace{0.5em}}}
+%\newcolumntype{R}[1]{>{\vspace{0.5em}\begin{minipage}{#1}\raggedleft\let\newline\\
+%\arraybackslash\hspace{0pt}}m{#1}<{\end{minipage}\vspace{0.5em}}}
+%\newcolumntype{C}[1]{>{\vspace{0.5em}\begin{minipage}{#1}\centering\let\newline\\
+%\arraybackslash\hspace{0pt}}m{#1}<{\end{minipage}\vspace{0.5em}}}
+%\makeatletter
+%\def\hlinewd#1{%
+%  \noalign{\ifnum0=`}\fi\hrule \@height #1 \futurelet
+%   \reserved@a\@xhline}
+%\makeatother
+%--------------------------------
+
 % \def\degree{${}^{\circ}$}
-% \def\ee{\text{e}}%自然对数底数
-% \def\ii{\text{i}}%复数单位
-% \def\dd{\text{d}}
+% \def\ee{\mathrm{e}}%自然对数底数
+% \def\ii{\mathrm{i}}%复数单位
+% \def\dd{\mathrm{d}}
 % \def\pp{\partial}
 % \def\z{\left}
 % \def\y{\right}
 % \def\ol{\overline}
 % \def\ora{$\overrightarrow{}$}
+
 
 %\newcommand{\bb}[1]{\raisebox{-2ex}[0pt][0pt]{\shortstack{#1}}}% 表格中向下移动文字2ex
 

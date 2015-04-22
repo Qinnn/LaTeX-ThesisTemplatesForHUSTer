@@ -16,7 +16,7 @@
         }
 \end{figure}
 
-centering控制图形居中，htbp 表示图形首选放在当前插图的位置，然后是页面头部，然后是页面尾部。width控制插图宽度（默认图形约束长宽比），后面接要插入的图片名，caption给出图形下面的描述，label为图形建立索引，在别的地方可以用ref来引用。例如：图\ref{hello}里面是hello。 
+centering控制图形居中，htbp 表示图形首选放在当前插图的位置，然后是页面头部，然后是页面尾部。width控制插图宽度（默认图形约束长宽比），后面接要插入的图片名，caption给出图形下面的描述，label为图形建立索引，在别的地方可以用ref来引用。例如：图\ref{hello}里面是hello。
 
 \subsection{并排插多图}
 
@@ -25,14 +25,14 @@ centering控制图形居中，htbp 表示图形首选放在当前插图的位置
 \begin{figure}[htbp]
 \begin{minipage}{0.5\linewidth}
 \centering
-\includegraphics[width=0.3\textwidth]{hello.png}
+\includegraphics[width=0.5\textwidth]{hello.png}
 \caption{caption1}
 \label{hello1}
 \end{minipage}%
 \begin{minipage}{0.5\linewidth}
 \centering
-\includegraphics[width=0.3\textwidth]{hello.png}
-\caption{caption}
+\includegraphics[width=0.5\textwidth]{hello.png}
+\caption{caption2}
 \label{hello2}
 \end{minipage}
 \end{figure}
@@ -43,7 +43,7 @@ centering控制图形居中，htbp 表示图形首选放在当前插图的位置
 
 \begin{figure}[htb]
   \centering
-  \subfigure[子图单独的描述]{
+  \subfigure[子图单独的caption]{
     \label{hello3} %% label for first subfigure
     \includegraphics[width=0.3\textwidth]{hello.png}}
   %\vspace{1in}
@@ -52,4 +52,6 @@ centering控制图形居中，htbp 表示图形首选放在当前插图的位置
     \includegraphics[width=0.3\textwidth]{hello.png}}
     \caption{总的caption}
   \label{hello5} %% label for entire figure
-\end{figure}
+\end{figure} 
+
+更多的插图需求请访问\url{http://www.ctex.org/documents/latex/graphics/}.
